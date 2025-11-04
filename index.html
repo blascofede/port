@@ -37,6 +37,7 @@
             font-size: 20px;
             image-rendering: pixelated;
             overflow-x: hidden;
+            line-height: 1.4; /* *** CAMBIO: Interlineado reducido *** */
         }
         h1, h2, h3, .pixel-title { 
             font-family: 'Press Start 2P', cursive;
@@ -253,10 +254,12 @@
         <!-- 1. HERO SECTION -->
         <section id="hero" class="text-center">
             <div class="z-10 mb-12 md:mb-16">
+                <!-- *** CAMBIO AQUÍ: Logo agrandado *** -->
                 <img src="assets/pradu.png" 
                      alt="Logo de PRADU" 
-                     onerror="this.onerror=null;this.src='https://placehold.co/224x224/1a1a1a/ff9f1c?text=PRADU';"
-                     class="glitch active w-40 h-40 md:w-56 md:h-56 object-contain mx-auto mb-8">
+                     onerror="this.onerror=null;this.src='https://placehold.co/256x256/1a1a1a/ff9f1c?text=PRADU';"
+                     class="glitch active w-48 h-48 md:w-64 md:h-64 object-contain mx-auto mb-8">
+                <!-- *** FIN DEL CAMBIO *** -->
 
                 <!-- Título principal agrandado -->
                 <h1 class="glitch active text-6xl sm:text-7xl md:text-8xl mb-4" data-text="PRADU">
@@ -264,7 +267,7 @@
                 </h1>
                 <!-- Subtítulo agrandado -->
                 <p class="text-3xl md:text-4xl uppercase tracking-widest font-semibold text-gray-300">
-                    Customer Experience Company
+                    Creative Experience Company
                 </p>
                 <a href="#about" class="pixel-button mt-12 inline-block">
                     Empezar Partida
@@ -288,11 +291,11 @@
                 <div class="md:col-span-2 text-center md:text-left">
                     <h2 class="glitch active text-2xl md:text-3xl mb-6" data-text="QUÉ HACEMOS">QUÉ HACEMOS</h2>
                     <!-- Texto actualizado -->
-                    <p class="text-3xl mb-6 leading-relaxed"> <!-- CAMBIO: de text-2xl a text-3xl -->
-                        Convertimos los tiempos de espera en experiencias interactivas.
+                    <p class="text-3xl mb-6 leading-snug"> <!-- CAMBIO: de leading-normal a leading-snug -->
+                        Convertimos  tiempos de espera en experiencias interactivas.
                     </p>
-                    <p class="text-3xl leading-relaxed"> <!-- CAMBIO: de text-2xl a text-3xl y quitado mb-10 -->
-                        Creamos minijuegos personalizados para negocios físicos que entretienen, premian y conectan con los clientes.
+                    <p class="text-3xl leading-snug"> <!-- CAMBIO: de leading-normal a leading-snug -->
+                        Minijuegos personalizados para negocios que entretienen, premian y conectan con los clientes.
                     </p>
                     
                     <!-- 3 Cajas eliminadas -->
@@ -307,39 +310,39 @@
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Paso 1 -->
-                    <div class="pixel-card text-center h-full">
+                    <div class="pixel-card text-center h-full p-4">
                         <img src="assets/qr.png" 
                              alt="Icono de escanear QR" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/128x128/1a1a1a/ff9f1c?text=QR';"
-                             class="w-32 h-32 mx-auto mb-4 object-contain"> <!-- CAMBIO: w-20 h-20 a w-32 h-32 -->
-                        <h3 class="pixel-title text-xl">1. Escaneá el QR</h3>
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/1a1a1a/ff9f1c?text=QR';"
+                             class="w-40 h-40 mx-auto mb-3 object-contain"> <!-- CAMBIO: w-36 h-36 a w-40 h-40 -->
+                        <h3 class="pixel-title text-xl">Escaneá el QR</h3>
                     </div>
                     
                     <!-- Paso 2 -->
-                    <div class="pixel-card text-center h-full">
+                    <div class="pixel-card text-center h-full p-4">
                         <img src="assets/entretene.png" 
                              alt="Icono de jugar" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/128x128/1a1a1a/ff9f1c?text=JUEGO';"
-                             class="w-32 h-32 mx-auto mb-4 object-contain"> <!-- CAMBIO: w-20 h-20 a w-32 h-32 -->
-                        <h3 class="pixel-title text-xl">2. Jugá mientras esperás</h3>
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/1a1a1a/ff9f1c?text=JUEGO';"
+                             class="w-40 h-40 mx-auto mb-3 object-contain"> <!-- CAMBIO: w-36 h-36 a w-40 h-40 -->
+                        <h3 class="pixel-title text-xl">Jugá mientras esperás</h3>
                     </div>
 
                     <!-- Paso 3 -->
-                    <div class="pixel-card text-center h-full">
+                    <div class="pixel-card text-center h-full p-4">
                         <img src="assets/premia.png" 
                              alt="Icono de ganar premios" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/128x128/1a1a1a/ff9f1c?text=PREMIO';"
-                             class="w-32 h-32 mx-auto mb-4 object-contain"> <!-- CAMBIO: w-20 h-20 a w-32 h-32 -->
-                        <h3 class="pixel-title text-xl">3. Ganás premios</h3>
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/1a1a1a/ff9f1c?text=PREMIO';"
+                             class="w-40 h-40 mx-auto mb-3 object-contain"> <!-- CAMBIO: w-36 h-36 a w-40 h-40 -->
+                        <h3 class="pixel-title text-xl">Ganás premios</h3>
                     </div>
 
                     <!-- Paso 4 -->
-                    <div class="pixel-card text-center h-full">
+                    <div class="pixel-card text-center h-full p-4">
                         <img src="assets/analiza.png" 
                              alt="Icono de analizar datos" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/128x128/1a1a1a/ff9f1c?text=DATA';"
-                             class="w-32 h-32 mx-auto mb-4 object-contain"> <!-- CAMBIO: w-20 h-20 a w-32 h-32 -->
-                        <h3 class="pixel-title text-xl">4. El negocio recopila datos</h3>
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/1a1a1a/ff9f1c?text=DATA';"
+                             class="w-40 h-40 mx-auto mb-3 object-contain"> <!-- CAMBIO: w-36 h-36 a w-40 h-40 -->
+                        <h3 class="pixel-title text-xl">El negocio recopila datos</h3>
                     </div>
                 </div>
             </div>
@@ -354,43 +357,43 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     
                     <!-- Beneficio 1 -->
-                    <div class="pixel-card text-center h-full"> <!-- CAMBIO: Clases flex eliminadas -->
+                    <div class="pixel-card text-center h-full p-4"> <!-- CAMBIO: Clases flex eliminadas -->
                         <!-- Icono: Happy Face -->
                         <img src="assets/corazon.png" 
                              alt="Icono de corazón" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/128x128/1a1a1a/ff9f1c?text=AMOR';"
-                             class="w-32 h-32 mx-auto mb-4 object-contain">
-                        <p class="text-xl leading-relaxed">Aumenta la satisfacción de tus clientes mientras esperan.</p>
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/1a1a1a/ff9f1c?text=AMOR';"
+                             class="w-40 h-40 mx-auto mb-3 object-contain">
+                        <p class="text-xl leading-normal">Aumenta la satisfacción de tus clientes mientras esperan</p>
                     </div>
                     
                     <!-- Beneficio 2 -->
-                    <div class="pixel-card text-center h-full"> <!-- CAMBIO: Clases flex eliminadas -->
+                    <div class="pixel-card text-center h-full p-4"> <!-- CAMBIO: Clases flex eliminadas -->
                         <!-- Icono: Database/Leads -->
                         <img src="assets/disquete.png" 
                              alt="Icono de disquete" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/128x128/1a1a1a/ff9f1c?text=DATA';"
-                             class="w-32 h-32 mx-auto mb-4 object-contain">
-                        <p class="text-xl leading-relaxed">Genera leads y datos reales de consumo.</p>
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/1a1a1a/ff9f1c?text=DATA';"
+                             class="w-40 h-40 mx-auto mb-3 object-contain">
+                        <p class="text-xl leading-normal">Genera leads y datos reales de consumo</p>
                     </div>
 
                     <!-- Beneficio 3 -->
-                    <div class="pixel-card text-center h-full"> <!-- CAMBIO: Clases flex eliminadas -->
+                    <div class="pixel-card text-center h-full p-4"> <!-- CAMBIO: Clases flex eliminadas -->
                         <!-- Icono: Premio (reusado) -->
                         <img src="assets/regalo.png" 
                              alt="Icono de regalo" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/128x128/1a1a1a/ff9f1c?text=PREMIO';"
-                             class="w-32 h-32 mx-auto mb-4 object-contain">
-                        <p class="text-xl leading-relaxed">Fideliza con descuentos y recompensas.</p>
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/1a1a1a/ff9f1c?text=PREMIO';"
+                             class="w-40 h-40 mx-auto mb-3 object-contain">
+                        <p class="text-xl leading-normal">Fideliza con descuentos y recompensas</p>
                     </div>
 
                     <!-- Beneficio 4 -->
-                    <div class="pixel-card text-center h-full"> <!-- CAMBIO: Clases flex eliminadas -->
+                    <div class="pixel-card text-center h-full p-4"> <!-- CAMBIO: Clases flex eliminadas -->
                         <!-- Icono: Star/Diferenciate -->
                         <img src="assets/estrella.png" 
                              alt="Icono de estrella" 
-                             onerror="this.onerror=null;this.src='https://placehold.co/128x128/1a1a1a/ff9f1c?text=STAR';"
-                             class="w-32 h-32 mx-auto mb-4 object-contain">
-                        <p class="text-xl leading-relaxed">Diferenciate de tu competencia con experiencias únicas.</p>
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/1a1a1a/ff9f1c?text=STAR';"
+                             class="w-40 h-40 mx-auto mb-3 object-contain">
+                        <p class="text-xl leading-normal">Diferenciate de tu competencia con experiencias únicas</p>
                     </div>
                 </div>
             </div>
@@ -416,13 +419,13 @@
                             
                             <!-- Wrapper para Card 1 -->
                             <div class="min-w-full md:min-w-0 px-4 md:px-0 box-border md:box-content">
-                                <div class="pixel-card text-left">
-                                    <img loading="lazy" src="assets/dario.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f0f0f0?text=MISION+1';" alt="Portada del proyecto Dario Barber" class="w-full h-48 object-cover mb-4 border-4 border-black">
+                                <div class="pixel-card text-left p-4">
+                                    <img loading="lazy" src="assets/dario.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f0f0f0?text=MISION+1';" alt="Portada del proyecto Dario Barber" class="w-full h-56 object-cover mb-3 border-4 border-black">
                                     <h3 class="pixel-title text-xl mb-2">Dario Barber</h3>
-                                    <p class="text-base mb-4 text-accent-orange"><strong>OBJETIVO:</strong> Reducir la impaciencia en filas.</p>
+                                    <p class="text-base mb-4 text-accent-orange"><strong>OBJETIVO:</strong> Entretener y fidelizar.</p>
                                     <div class="text-center mb-4 border-y-4 border-dashed border-border-color py-2 space-y-2">
-                                        <div><p class="text-lg"><span class="font-bold text-2xl text-accent-blue">+42%</span> Percepción Positiva</p></div>
-                                        <div><p class="text-lg"><span class="font-bold text-2xl text-accent-blue">800+</span> Leads / Semana</p></div>
+                                        <div><p class="text-lg"><span class="font-bold text-2xl text-accent-blue">+87%</span> Percepción Positiva</p></div>
+                                        <div><p class="text-lg"><span class="font-bold text-2xl text-accent-blue">130+</span> Leads / Semana</p></div>
                                     </div>
                                     <div class="pixel-button w-full block text-center mission-button" data-project="1">Ver Misión</div>
                                 </div>
@@ -430,13 +433,13 @@
 
                             <!-- Wrapper para Card 2 (CAMBIADO A SKOL) -->
                             <div class="min-w-full md:min-w-0 px-4 md:px-0 box-border md:box-content">
-                                <div class="pixel-card text-left">
-                                    <img loading="lazy" src="assets/skol.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/ff9f1c?text=SKOL';" alt="Portada del proyecto Skol" class="w-full h-48 object-cover mb-4 border-4 border-black">
+                                <div class="pixel-card text-left p-4">
+                                    <img loading="lazy" src="assets/skol.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/ff9f1c?text=SKOL';" alt="Portada del proyecto Skol" class="w-full h-56 object-cover mb-3 border-4 border-black">
                                     <h3 class="pixel-title text-xl mb-2">Skol</h3>
-                                    <p class="text-base mb-4 text-accent-orange"><strong>OBJETIVO:</strong> Educar sobre finanzas sostenibles.</p>
+                                    <p class="text-base mb-4 text-accent-orange"><strong>OBJETIVO:</strong> Juego para previar</p>
                                     <div class="text-center mb-4 border-y-4 border-dashed border-border-color py-2 space-y-2">
-                                        <div><p class="text-lg"><span class="font-bold text-2xl text-accent-blue">+35%</span> Engagement App</p></div>
-                                        <div><p class="text-lg"><span class="font-bold text-2xl text-accent-blue">1.2K</span> Nuevos Usuarios</p></div>
+                                        <div><p class="text-lg"><span class="font-bold text-2xl text-accent-blue">+75%</span> Visibilidad de marca</p></div>
+                                        <div><p class="text-lg"><span class="font-bold text-2xl text-accent-blue">1.2K</span> Nuevos jugadores</p></div>
                                     </div>
                                     <div class="pixel-button w-full block text-center mission-button" data-project="2">Ver Misión</div>
                                 </div>
@@ -444,8 +447,8 @@
                             
                             <!-- Wrapper para Card 3 -->
                             <div class="min-w-full md:min-w-0 px-4 md:px-0 box-border md:box-content">
-                                <div class="pixel-card text-left">
-                                    <img loading="lazy" src="assets/gamerfest.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f0f0f0?text=MISION+3';" alt="Portada del proyecto GamerFest" class="w-full h-48 object-cover mb-4 border-4 border-black">
+                                <div class="pixel-card text-left p-4">
+                                    <img loading="lazy" src="assets/gamerfest.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f0f0f0?text=MISION+3';" alt="Portada del proyecto GamerFest" class="w-full h-56 object-cover mb-3 border-4 border-black">
                                     <h3 class="pixel-title text-xl mb-2">GamerFest 2024</h3>
                                     <p class="text-base mb-4 text-accent-orange"><strong>OBJETIVO:</strong> Gamificar el evento para sponsors.</p>
                                     <div class="text-center mb-4 border-y-4 border-dashed border-border-color py-2 space-y-2">
@@ -458,8 +461,8 @@
 
                             <!-- Wrapper para Card 4 -->
                             <div class="min-w-full md:min-w-0 px-4 md:px-0 box-border md:box-content">
-                                <div class="pixel-card text-left">
-                                    <img loading="lazy" src="assets/retail.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/4a90e2?text=MISION+4';" alt="Portada del proyecto Retail Analytics" class="w-full h-48 object-cover mb-4 border-4 border-black">
+                                <div class="pixel-card text-left p-4">
+                                    <img loading="lazy" src="assets/retail.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/4a90e2?text=MISION+4';" alt="Portada del proyecto Retail Analytics" class="w-full h-56 object-cover mb-3 border-4 border-black">
                                     <h3 class="pixel-title text-xl mb-2">Retail Analytics</h3>
                                     <p class="text-base mb-4 text-accent-orange"><strong>OBJETIVO:</strong> Optimizar el stock en tiendas.</p>
                                     <div class="text-center mb-4 border-y-4 border-dashed border-border-color py-2 space-y-2">
@@ -510,36 +513,36 @@
         <div id="project-details-container">
             <!-- Project 1 Detail -->
             <div id="project-1" class="project-detail-content">
-                <div class="pixel-card">
+                <div class="pixel-card p-4">
                     <h2 class="glitch active text-2xl mb-4" data-text="Dario Barber">Dario Barber</h2>
-                    <img src="assets/dario.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f0f0f0?text=MISION+1';" alt="Proyecto Dario Barber" class="w-full h-64 object-cover mb-4 border-4 border-black">
+                    <img src="assets/dario.png" onerror="this.onerror=null;this.src='httpsG://placehold.co/600x400/1a1a1a/f0f0f0?text=MISION+1';" alt="Proyecto Dario Barber" class="w-full h-80 object-cover mb-3 border-4 border-black">
                     <p class="text-xl mb-4">Se desarrolló un minijuego para entretener a los clientes mientras esperaban su turno. El juego, accesible vía código QR, permitía a los usuarios acumular puntos y canjearlos por descuentos, transformando el tiempo de espera en una experiencia positiva y de marca.</p>
                     <div class="pixel-button back-button">Volver</div>
                 </div>
             </div>
             <!-- Project 2 Detail (CAMBIADO A SKOL) -->
             <div id="project-2" class="project-detail-content">
-                <div class="pixel-card">
+                <div class="pixel-card p-4">
                     <h2 class="glitch active text-2xl mb-4" data-text="Skol">Skol</h2>
-                    <img src="assets/skol.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/ff9f1c?text=SKOL';" alt="Proyecto Skol" class="w-full h-64 object-cover mb-4 border-4 border-black">
+                    <img src="assets/skol.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/ff9f1c?text=SKOL';" alt="Proyecto Skol" class="w-full h-80 object-cover mb-3 border-4 border-black">
                     <p class="text-xl mb-4">Para educar a los usuarios sobre finanzas sostenibles, se creó un juego de simulación dentro de la app del banco. Los jugadores tomaban decisiones de inversión y veían el impacto ambiental y social de sus elecciones, aumentando el engagement y el conocimiento de la marca.</p>
                     <div class="pixel-button back-button">Volver</div>
                 </div>
             </div>
             <!-- Project 3 Detail -->
             <div id="project-3" class="project-detail-content">
-                <div class="pixel-card">
+                <div class="pixel-card p-4">
                     <h2 class="glitch active text-2xl mb-4" data-text="GamerFest 2024">GamerFest 2024</h2>
-                    <img src="assets/gamerfest.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f0f0f0?text=MISION+3';" alt="Proyecto GamerFest 2024" class="w-full h-64 object-cover mb-4 border-4 border-black">
+                    <img src="assets/gamerfest.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f0f0f0?text=MISION+3';" alt="Proyecto GamerFest 2024" class="w-full h-80 object-cover mb-3 border-4 border-black">
                     <p class="text-xl mb-4">Se implementó una app web para el evento que gamificaba la visita a los stands de sponsors. Los asistentes escaneaban códigos QR en cada stand para desbloquear logros y participar en sorteos, triplicando la interacción y la recopilación de datos para los patrocinadores.</p>
                     <div class="pixel-button back-button">Volver</div>
                 </div>
             </div>
             <!-- Project 4 Detail -->
             <div id="project-4" class="project-detail-content">
-                <div class="pixel-card">
+                <div class="pixel-card p-4">
                     <h2 class="glitch active text-2xl mb-4" data-text="Retail Analytics">Retail Analytics</h2>
-                    <img src="assets/retail.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/4a90e2?text=MISION+4';" alt="Proyecto Retail Analytics" class="w-full h-64 object-cover mb-4 border-4 border-black">
+                    <img src="assets/retail.png" onerror="this.onerror=null;this.src='httpss://placehold.co/600x400/1a1a1a/4a90e2?text=MISION+4';" alt="Proyecto Retail Analytics" class="w-full h-80 object-cover mb-3 border-4 border-black">
                     <p class="text-xl mb-4">Mediante el análisis de datos de ventas y comportamiento de clientes, se desarrolló un dashboard interactivo que permitía a los gerentes de tienda visualizar tendencias y predecir la demanda. Esto llevó a una optimización del inventario, reduciendo el quiebre de stock y aumentando las ventas.</p>
                     <div class="pixel-button back-button">Volver</div>
                 </div>
@@ -665,8 +668,6 @@
         </script>
     </body>
     </html>
-
-
 
 
 
